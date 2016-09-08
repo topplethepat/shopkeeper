@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TestShopKeeper</title>
+  <script src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h2>Products</h2>
+		<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+		 <tr>
+		   <th>#</th>
+		   <th>Click for product info</th>
+		   <th>Description</th>
+		   <th>Price</th>
+		   <th>Download</th>
+		   <th>Click to Buy</th>
+		 </tr> 
+	</thead>
+	<tbody>
+		 <tr>
+        	<td>2</td>
+	       <td>ShopKeeper FMP(Windows)</td>
+	       <td>Single User, Windows version of ShopKeeper FMP</td>
+	       <td>$595.00</td>
+	       <td><a>Download</a></td>
+	       <td><button id="button">Buy Now</button></td>
+	     </tr> 
+
+      </tbody>
+	<script>
+	$(document).ready(function(){
+
+	$('#button').click (function(){
+		$(this).css('color','red');
+	});
+  });	
+
+</script>
+</body>
+</html>
