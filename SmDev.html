@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="ut f-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Smaller Devices</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' 
+	type='text/css'>
+
+ <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+ <!--  <link rel="stylesheet" href = "bootstrap/css/bootstrap.css"> -->
+ 
+  <script type="text/javascript" src="bootstrap/js/jquery-1.12.0.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  
+  <script src="js/app.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+			</div>
+		<div class="row">
+			
+          <div class="col-md-4">
+          	<h3>iPhone, iPod Touch and iPad Support</h3>
+		    <p>	
+ShopKeeper-FMP multi-user (versions 11.2.22 up) now allows access from iOS devices (iPhone, iPod Touch [4], or iPad).  Just get FileMaker GO from the iTunes App Store.
+</p><br/>
+<p>In ShopKeeper</p>
+<p>
+1) Go to Inventory-&gt; Scripts (menu)-&gt; Update Mobile Inv.
+2) It will ask if you want to include product costs.  Normally you would say no.</p>
+<p>3) Then it will ask if you want to do All or just the found Set.  If you select All, then it will delete the current entries and create an all new records.  If you choose Set, then it will update the entries in the current selected set of records.  Note that changing something other than the ave. cost in the inventory record will automatically update the Mobile.fp7 Record for connected client iOS devices.</p>
+<p>4) To get to the Mobile file go to Main Menu-&gt; Scripts (menu)-&gt; Mobile Inventory.</p>
+
+
+</div>
+<div class="col-md-4 text-center">
+			<img class="img-responsive" src="MobileScreen.gif" alt="mobile screen image">
+			
+				
+		</div>
+		<div class="col-sm-4 text-right">
+<h4>On the iOS machine</h4>
+<p>1) When you log in from the iPod you will have two choices MAIN and MOBILE.  MOBILE is just the inventory stuff and loads much faster, the MAIN is to enter ShopKeeper normally.<p>
+2) Try out all the buttons.  You cannot hurt anything.</p><p>
+3) Nothing automatically feeds back to the ShopKeeper inventory.</p>
+4)To get back to ShopKeeper, hit the company name, it is a button or hit the button icon with the four arrows.<p>
+		</div>	
+		<div class="col-md-12">
+			<hr>
+		</div>
+<div class="col-md-12">
+Notes:</p>
+First of all we have just been trying to get a general (all businesses) Mobile.fp7 file working with ShopKeeper and we are still not completely finished with all the possibilities (more to come).  I am still trying to determine the best way to go from MOBILE to SK.  Right now I am thinking it should be an "Update SK" button so it must be manually checked before the info in SK is updated.  What can't decide which fields to update - just On Hand or a combination of fields (short description, on hand, category and ????).
+
+I think the field names in Mobile.fp7 may need to be changed to match those in SK.  Chris (POSDirect.com) and I are looking at various bar code reader options for the iOS devices.  We are open for suggestions for what you would like to be able to do with a mobile device and ShopKeeper (support@shopkeeper.com).
+</p>
+
+		</div>
+			
+		
+	</body>
+</html>			
