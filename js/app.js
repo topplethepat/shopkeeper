@@ -1,8 +1,24 @@
 	$(document).ready(function(){
 
-	$('.button').click (function(){
+	$('.target').submit(function(){
 		$(this).css('color','red');
-		$(location).attr('href',"http://www.cartserver.com/sc/cart.cgi");
+		
 		
 	});
+	$('.jumbotron').on('click','button', function(){
+		window.location.href="FMP.html";
+	});
+
+   $('.ipad').on('click', 'button', function(){
+   	    window.location.href="SmDev.html";
+   });
+$('img').on('click', function () {
+        var image = $(this).attr('src');
+        //alert(image);
+        $('#myModal').on('show.bs.modal', function () {
+            $(".showimage").attr("src", image);
+            });
+    });	
+
   });
+	

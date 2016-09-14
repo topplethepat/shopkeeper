@@ -4,41 +4,95 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TestShopKeeper</title>
-  <script src="js/jquery.js"></script>
+	  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href = "bootstrap/css/bootstrap.css">
+  <script type="text/javascript" src="bootstrap/js/jquery-1.12.0.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+ 
+ 
 </head>
 <body>
-	<div class="container">
-		<h2>Products</h2>
-		<div class="table-responsive">
-		<table class="table table-striped">
-			<thead>
-		 <tr>
-		   <th>#</th>
-		   <th>Click for product info</th>
-		   <th>Description</th>
-		   <th>Price</th>
-		   <th>Download</th>
-		   <th>Click to Buy</th>
-		 </tr> 
-	</thead>
-	<tbody>
-		 <tr>
-        	<td>2</td>
-	       <td>ShopKeeper FMP(Windows)</td>
-	       <td>Single User, Windows version of ShopKeeper FMP</td>
-	       <td>$595.00</td>
-	       <td><a>Download</a></td>
-	       <td><button id="button">Buy Now</button></td>
-	     </tr> 
+	<div class="row">
+			<div class="col-md-12">
+				<hr>
+			</div>
+			<div class="row">
+			<div class="col-md-2 text-center">
+				<img class="img-responsive"src="skfmp_cust.jpg" alt="Entry" id="1" data-toggle="modal" data-target="#myModal">
+				<p><a>Customer Entry</a><p>
+			</div>
+			<div class="col-md-2 text-center">
+				<img class="img-responsive"src="skfmp_inventory.jpg" alt="Inventory" id="2" data-toggle="modal" data-target="#myModal">
+				<p><a>Inventory</a><p>
+			</div>
+			<div class="col-md-2 text-center">
+				<img class="img-responsive"src="skfmp_invoice.jpg" alt="Invoicing" id="3"data-toggle="modal" data-target="#myModal">
+				<p><a>Normal Invoicing</a><p>
+			</div>
+			<div class="col-md-2 text-center">
+				<img class="img-responsive"src="skfmp_main.jpg" alt="Time clock" id="4" data-toggle="modal" data-target="#myModal">
+				<p><a>Time Clock</a><p>
+			</div>
+			<div class="col-md-2 text-center">
+				<img class="img-responsive"src="skfmp_pos.jpg" alt="Main Menu" id="5" data-toggle="modal" data-target="#myModal">
+				<p><a>Main Menu</a><p>
+			</div>
+			<div class="col-md-2 text-center">
+				<img class="img-responsive" src="skfmp_timeclock.jpg" alt="POS Screen" id="6" data-toggle="modal" data-target="#myModal">
+				<p><a>Fast POS Screen</a><p>
+			</div>
+	</div>
+			
 
-      </tbody>
+<!-- <img class = "modal-content" src="skfmp_cust.jpg" style="display: none" alt="Customer Entry" width="300" height="200">
+
+
+<div id="myModal" class="modal">
+	
+	<img class="modal-content" id="img01"> -->
+	
+<!-- </div> -->
+<!-- <img height="150" width="120" id="1" data-toggle="modal" data-target="#myModal" src='skfmp_cust.jpg' alt='shopkeeper first product' />
+<img height="150" width="120" id="2" data-toggle="modal" data-target="#myModal" src='skfmp_inventory.jpg' alt='shopkeeper second product'/> -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content" >
+            <div class="modal-body">
+                <img class="showimage img-responsive" src="" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 	<script>
 	$(document).ready(function(){
+// var modal = document.getElementById('myModal');
 
-	$('#button').click (function(){
-		$(this).css('color','red');
-	});
-  });	
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+// var img = document.getElementById('myImg');
+// var modalImg = document.getElementById("img01");
+// var captionText = document.getElementById("caption");
+// img.onclick = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+//     captionText.innerHTML = this.alt;
+    
+// }
+// modal.onclick = function(){
+//    modal.style.display = "none";
+// }
+  $('img').on('click', function () {
+        var image = $(this).attr('src');
+        //alert(image);
+        $('#myModal').on('show.bs.modal', function () {
+            $(".showimage").attr("src", image);
+        });
+    });
+  });
+	
+ 	
 
 </script>
 </body>

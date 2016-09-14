@@ -9,7 +9,7 @@
 	type='text/css'>
 
  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href = "bootstrap/css/bootstrap.css">
+  <!-- <link rel="stylesheet" href = "bootstrap/css/bootstrap.css"> -->
  
   <script type="text/javascript" src="bootstrap/js/jquery-1.12.0.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -25,54 +25,58 @@
 		<div class="row">
 			
           <div class="col-md-4">
-          	<h2>Overview</h2>
-		    <p>	Staying ahead of your competition takes a lot of hard work, experience, and insight. Unfortunately, manual paperwork infringes on what you do best: Making money! <br/>Critical information and features are at your fingertips with this revolutionary application. ShopKeeper FMP is easy to use and produces results. You can quickly process customer sales, monitor inventory levels, expedite purchase orders, control accounts payable, track receivables,prepare accurate financial reports, and much, much more. Shopkeeper has already improved thousands of retail, mail order, wholesale, consignment, and service oriented businesses around the world.</p>										
+          	<h3>Overview</h3>
+		    <p>	Staying ahead of your competition takes a lot of hard work, experience, and insight. Unfortunately, manual paperwork infringes on what you do best: Making money! <br/>Critical information and features are at your fingertips with this revolutionary application. ShopKeeper FMP&trade; is easy to use and produces results. You can quickly process customer sales, monitor inventory levels, expedite purchase orders, control accounts payable, track receivables,prepare accurate financial reports, and much, much more. Shopkeeper has already improved thousands of retail, mail order, wholesale, consignment, and service oriented businesses around the world.</p>										
 		</div>
 			<div class="col-md-4 text-center">
 			<img class="img-responsive" src="skfmp.gif" alt="FMP image">
-				 <button class="button">Buy Now</button>
+				  <form class="target" action="http://www.cartserver.com/sc/cart.cgi" method="post">
+	       	<input type="submit" value="Buy Now">
+	       	<input type="hidden" name="item" value="p-1050^skfmpsum^SK FMP SU Mac^595.00^1^^^^2"></form>
 				
 		</div>	
 		<div class="col-sm-4 text-right">
 		  <h4>Download Demos</h4>
-		  <p>ShopKeeper FMP™ - Windows (XP) with runtime engine - <a>ShopKeeper_FMP.EXE</a> (12089 kb)<br/>
-		  <p>ShopKeeper FMP™ - MacOS with runtime engine - <a>ShopKeeper_FMP_Demo.dmg</a> (22.1 MB)<br/>	
-           <p>ShopKeeper FMP™ - MacOS 10.4up with runtime engine (FM8)- <a>ShopKeeper-8_Demo.dmg</a> (32.6 MB)
-           <p>NOTE: If you'd like to avoid a long download, we offer a free CD-ROM with demo versions of all our programs. <a>Click here to order the demo CD-ROM.</a>	
+		  <p>ShopKeeper FMP&trade; - Windows (XP) with runtime engine - <a href="ftp://ftp.shopkeeper.com/copperhead/windows_business/ShopKeeper_FMP.EXE">ShopKeeper_FMP.EXE</a> (12089 kb)<br/>
+		  <p>ShopKeeper FMP&trade; - MacOS with runtime engine - <a href="ftp://ftp.shopkeeper.com/copperhead/mac_applications/ShopKeeper_FMP_Demo.dmg">ShopKeeper_FMP_Demo.dmg</a> (22.1 MB)<br/>	
+           <p>ShopKeeper FMP&trade; - MacOS 10.4up with runtime engine (FM8)- <a href="ftp://ftp.shopkeeper.com/copperhead/mac_applications/ShopKeeper-8_Demo.dmg">ShopKeeper-8_Demo.dmg</a> (32.6 MB)
+           <p>NOTE: If you'd like to avoid a long download, we offer a free CD-ROM with demo versions of all our programs. <a href="demo_form.php3">Request a Free Demo CD</a>	
 			</div>	
-			<div class="row">
+			
+		<div class="row">
 			<div class="col-md-12">
 				<hr>
 			</div>
 			<div class="row">
 			<div class="col-md-2 text-center">
-				<img class="img-responsive"src="skfmp_cust_tn.jpg">
-				<p><a>Customer Entry</a><p>
+				<img class="img-responsive"src="skfmp_cust.jpg" alt="Entry" id="1" data-toggle="modal" data-target="#myModal">
+				<p>Customer Entry<p>
 			</div>
 			<div class="col-md-2 text-center">
-				<img class="img-responsive"src="skfmp_inventory-tn.jpg">
-				<p><a>Inventory</a><p>
+				<img class="img-responsive"src="skfmp_inventory.jpg" alt="Inventory" id="2" data-toggle="modal" data-target="#myModal">
+				<p>Inventory<p>
 			</div>
 			<div class="col-md-2 text-center">
-				<img class="img-responsive"src="skfmp_invoice-tn.jpg">
-				<p><a>Normal Invoicing</a><p>
+				<img class="img-responsive"src="skfmp_invoice.jpg" alt="Invoicing" id="3"data-toggle="modal" data-target="#myModal">
+				<p>Normal Invoicing<p>
 			</div>
 			<div class="col-md-2 text-center">
-				<img class="img-responsive"src="skfmp_main-tn.jpg">
-				<p><a>Time Clock</a><p>
+				<img class="img-responsive"src="skfmp_main.jpg" alt="Main Menu" id="4" data-toggle="modal" data-target="#myModal">
+				<p>Main Menu<p>
 			</div>
 			<div class="col-md-2 text-center">
-				<img class="img-responsive"src="skfmp_pos-tn.jpg">
-				<p><a>Main Menu</a><p>
+				<img class="img-responsive"src="skfmp_pos.jpg" alt="Main Menu" id="5" data-toggle="modal" data-target="#myModal">
+				<p>Fast POS Screen<p>
 			</div>
 			<div class="col-md-2 text-center">
-				<img class="img-responsive" src="skfmp_timeclock-tn.jpg">
-				<p><a>Fast POS Screen</a><p>
+				<img class="img-responsive" src="skfmp_timeclock.jpg" alt="Time Clock" id="6" data-toggle="modal" data-target="#myModal">
+				<p>Time Clock<p>
 			</div>
+	</div>
         </div>
 			<div class="col-md-12">
-				<h2>Features</h2>
-				<p>Advanced reporting * Multiple security levels * Till management · Color/size tracking · Tracks serial numbers on sales · Eleven payment types · Split tendering · Accounts payable · Accounts receivable · Currency conversion · Consignments · Detailed client history reports · Monthly statements · Bar code printing/reading · Packing slips · Background credit authorization with MacAuthorize/PCAuthorize · Vendor files · Unlimited product categorization · Reorder listings with suggestions · Comprehensive invoices · Multiple tax rates · Manage incoming and outgoing inventory · Create recommended purchase order · Layaways · Time clock and sign-IN/OUT board · In-house e-mail system · Compile lists and labels by name, zip code, items sold, invoice number, or account status · Detailed client history reports · Track by job number · Comprehensive invoices · Low training curve · Hourly billing · Handle unlimited inventory and client records · Shipping and service charge calculation</p>
+				<h3>Features</h3>
+				<p>Advanced reporting * Multiple security levels * Till management * Color/size tracking * Tracks serial numbers on sales * Eleven payment types * Split tendering * Accounts payable * Accounts receivable * Currency conversion * Consignments * Detailed client history reports * Monthly statements * Bar code printing/reading * Packing slips * Background credit authorization with MacAuthorize/PCAuthorize * Vendor files * Unlimited product categorization * Reorder listings with suggestions * Comprehensive invoices * Multiple tax rates * Manage incoming and outgoing inventory * Create recommended purchase order * Layaways * Time clock and sign-IN/OUT board * In-house e-mail system * Compile lists and labels by name, zip code, items sold, invoice number, or account status * Detailed client history reports * Track by job number * Comprehensive invoices * Low training curve * Hourly billing * Handle unlimited inventory and client records * Shipping and service charge calculation</p>
 			</div>
 		
 			<div class="row">
@@ -88,7 +92,7 @@
 			<div class="col-md-3">
 				<h3>Network Topographies</h3>
                <ul>
-               	<li>Single User - ShopKeeper FMP can operate on one computer at a time.</li>
+               	<li>Single User - ShopKeeper FMP&trade; can operate on one computer at a time.</li>
                  <li>Multi-User - Server computer is used as a work station. Requires FileMaker Pro License at each terminal. Can run cross platform via TCP/IP.
                  </li>
                   <li>Client/Server - Fastest network method that uses a separate file server program which delivers data to client computers. Requires FileMaker Pro Server.</li>  
@@ -117,6 +121,33 @@
 			
 		</div>
 		</div>
+		<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content" >
+            <div class="modal-body">
+                <img class="showimage img-responsive" src="" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Trigger the Modal -->
+<!-- <img class = "modal-content" src="skfmp_cust.jpg" style="display: none" alt="Customer Entry" width="300" height="200"> -->
+
+<!-- The Modal -->
+<!-- <div id="myModal" class="modal">
+	
+	<img class="modal-content" id="img01">
+	
+</div>
+	<div id="caption"></div>
+</div> -->
+
+
+ 
+</div>
 	</div>
 
 </body>

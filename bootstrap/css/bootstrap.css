@@ -3652,13 +3652,16 @@ a.thumbnail.active {
   padding-bottom: 75%;
 }
 .close {
+  position: absolute;
   float: right;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
-  color: #000000;
+  color: #f1f1f1;
   text-shadow: 0 1px 0 #ffffff;
+  z-index: 2000;
   opacity: 0.2;
+  transition: 0.3s;
   filter: alpha(opacity=20);
 }
 .close:hover,
@@ -3676,6 +3679,13 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg:hover {opacity: 0.7;}
+
 .modal-open {
   overflow: hidden;
 }
@@ -3690,6 +3700,10 @@ button.close {
   z-index: 1050;
   -webkit-overflow-scrolling: touch;
   outline: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+
 }
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
@@ -3727,6 +3741,8 @@ button.close {
           background-clip: padding-box;
   outline: 0;
 }
+
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -3787,6 +3803,10 @@ button.close {
     margin: 30px auto;
   }
   .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
