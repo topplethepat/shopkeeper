@@ -45,7 +45,7 @@
 	<div class="text-center">
 		<h3>Please let us know your Questions and Comments</h3>
 	</div>
-	<form  class="form-horizontal">
+	<form method="post" action = "/cig-sys/cgiemail/comments.txt" class="form-horizontal">
 	
   <div class="form-group">
     <label class="control-label col-sm-2" for="name">Your Name:</label>
@@ -94,22 +94,25 @@
   	<div class="col-sm-offset-2 col-sm-8">
   <label for="comment">Questions or Comments:</label>
   <textarea class="form-control" rows="7" id="comment"></textarea>
+<!-- </div>
 </div>
-</div>
-  <div class="form-group"> 
+  <div class="form-group">  -->
     <div class="col-sm-offset-2 col-sm-10">
-  
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Send</button>
-</form>
+  </div>
+  <!-- <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Send</button> -->
+  <input type="hidden" name="success" value="http://www.shopkeeper.com/thanks.php3">
+  <input type="submit" class="btn btn-info btn-lg" name="Submit" value="Send Message">
+
  </div>
 </div>
+</form>
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+<!-- <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog"> -->
 
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
+   <!--  <div class="modal-content"> -->
+     <!--  <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Thanks for being in touch!</h4>
       </div>
@@ -122,29 +125,9 @@
     </div>
 
   </div>
-</div>
+</div> -->
 </form>
-<!--  <nav class="navbar navbar-default navbar-fixed-bottom">
-    	<div class="container">
-    		<div class="navbar-header">
-    			
-    		</div>
-    		<ul class="nav navbar-nav">
-         <li class="active"><a href="index.html">Home</a></li>
-			 <li><a href="#">About Us</a></li>
-			 <li><a href="Products.html">Products</a></li>
-             <li><a href="ftp://ftp.shopkeeper.com/copperhead/">Download</a></li>
-           
-             
-             <li><a href="TechSup.html">Technical Support</a></li>
-            
-             
-             
-            
-              <li><img src="owl.jpg"></li>
 
-    		 </ul>
-        </div>  -->
 </div>
 </body>
 </html>	
