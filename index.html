@@ -5,11 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ShopKeeper</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href = "bootstrap/css/bootstrap.css"> -->
-  <script type="text/javascript" src="bootstrap/js/jquery-1.12.0.js"></script>
-  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/app.js"></script>
- <meta name="keywords" content="Point of Sale, Mobile, accounting, windows pos programs, windows pos software, windows pos systems, Macintosh pos programs, Macintosh pos software, Macintosh pos systems, shopkeep, shopkeeppos, Mac pos programs, Mac pos software, Mac pos systems, Best POS,iPad, iPod Touch, iPhone, accounting software, bar code print, bar codes, mac pos, bar coding, bar-codes, bar-coding, barcodes, barcoding, barcoding, cash register, cash register programs, cash register software, cash register systems, computerized point of sale programs, computerized point of sale software, computerized point of sale systems, computerized pos programs, computerized pos software, computerized pos systems, credit card, FileMaker, Inventory, inventory control, inventory control programs, inventory control software, inventory control software, inventory control systems, inventory management programs, inventory management software, inventory management systems, inventory programs, inventory software, inventory systems, inventory tracking programs, inventory tracking software, inventory tracking systems, Invoice, invoicing programs, invoicing software, invoicing systems, Macintosh, Mail Order, Open To Buy, order entry, OTB, O.T.B., P.O.S., P-O-S, point of sale, point of sale programs, point of sale software, point of sale systems, point of sales, point-of-sale, point-of-sale, point-of-sale programs, point-of-sale software, point-of-sale systems, point-of-sale systems, pointofsale, portable pos, pos, pos programs, pos software, pos systems, printers, purchase orders, Purchasing, Receivables, retail, retail automation programs, retail automation software, retail automation systems, retail management, retail management programs, retail management software, retail management system, retail management systems, retail pos software, retail programs, retail software, retail store programs, retail store software, retail store systems, retail systems, retailers resources, retailing, serial numbers, software, upc bar code, Wholesale, windows">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <!--<script type="text/javascript" src="bootstrap/js/jquery-1.12.0.js"></script>-->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!--<script src="js/app.js"></script> -->
+ <meta name="keywords" content="Point of Sale, Mobile, accounting, windows pos programs, windows pos software, windows pos systems, Macintosh pos programs, Macintosh pos software, Macintosh pos systems, shopkeep, shopkeeppos, Mac pos programs, Mac pos software, Mac pos systems, Best POS,iPad, iPod Touch, iPhone, accounting software, bar code print, bar codes, mac pos, bar coding, bar-codes, bar-coding, barcodes, barcoding, barcoding, cash register, cash register programs, cash register software, cash register systems, computerized point of sale programs, computerized point of sale software, computerized point of sale systems, computerized pos programs, computerized pos software, computerized pos systems, credit card, FileMaker, Inventory, inventory control, inventory control programs, inventory control software, inventory control systems, inventory management programs, inventory management software, inventory management systems, inventory programs, inventory software, inventory systems, inventory tracking programs, inventory tracking software, inventory tracking systems, Invoice, invoicing programs, invoicing software, invoicing systems, Macintosh, Mail Order, Open To Buy, order entry, OTB, O.T.B., P.O.S., P-O-S, point of sale, point of sale programs, point of sale software, point of sale systems, point of sales, point-of-sale, point-of-sale, point-of-sale programs, point-of-sale software, point-of-sale systems, pointofsale, portable pos, pos, pos programs, pos software, pos systems, printers, purchase orders, Purchasing, Receivables, retail, retail automation programs, retail automation software, retail automation systems, retail management, retail management programs, retail management software, retail management system, retail management systems, retail pos software, retail programs, retail software, retail store programs, retail store software, retail store systems, retail systems, retailers resources, retailing, serial numbers, software, upc bar code, Wholesale, windows">
 <meta name="description" content="ShopKeeper Software since 1985.  Point-Of-Sale / Order Entry / Inventory Control System with Mobile Access for Macintosh or Windows.">
 </head>
 <body>
@@ -62,6 +62,31 @@
   
 
    </div> 
-    </nav>
+    <script>
+    $(document).ready(function(){
+
+  $('.target').submit(function(){
+    $(this).css('color','red');
+    
+    
+  });
+  $('.jumbotron').on('click','button', function(){
+    window.location.href="FMP.html";
+  });
+
+   $('.ipad').on('click', 'button', function(){
+        window.location.href="SmDev.html";
+   });
+$('img').on('click', function () {
+        var image = $(this).attr('src');
+        //alert(image);
+        $('#myModal').on('show.bs.modal', function () {
+            $(".showimage").attr("src", image);
+            });
+    }); 
+
+  });
+  </script>
+
 </body>
 </html>	

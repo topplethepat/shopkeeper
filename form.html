@@ -45,44 +45,43 @@
 	<div class="text-center">
 		<h3>Please let us know your Questions and Comments</h3>
 	</div>
-	<form method="post" action = "/cig-sys/cgiemail/comments.txt" class="form-horizontal">
-	
+	<form method="post" action = "/cgi-sys/cgiemail/newComments.txt" class="form-horizontal">
   <div class="form-group">
     <label class="control-label col-sm-2" for="name">Your Name:</label>
     <div class="col-sm-8">
-      <input type="text" class="form-control" id="name" placeholder="Enter name">
+      <input type="text" class="form-control" name="name" placeholder="Enter name">
     </div>
   </div>
   <div class="form-group">
     <label class="control-label col-sm-2" for="email">Email:</label>
     <div class="col-sm-8"> 
-      <input type="text" class="form-control" id="email" placeholder="Enter email">
+      <input type="text" class="form-control" name="email" placeholder="Enter email">
     </div>
   </div>
   
     	  <div class="form-group">
     <label class="control-label col-sm-2" for="phone">Phone Number:</label>
     <div class="col-sm-8"> 
-      <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+      <input type="text" class="form-control" name="phone" placeholder="Enter phone number">
     </div>
    </div> 
       <div class="form-group">
     <label class="control-label col-sm-2" for="address">Address:</label>
     <div class="col-sm-8"> 
-      <input type="text" class="form-control" id="address" placeholder="Enter mailing address">
+      <input type="text" class="form-control" name="mail" placeholder="Enter mailing address">
     </div>
    </div> 
       <div class="form-group">
-    <label class="control-label col-sm-2" for="location">City/State/Zip:</label>
+    <label class="control-label col-sm-2" for="citystatezip">City/State/Zip:</label>
     <div class="col-sm-8"> 
-      <input type="text" class="form-control" id="location" placeholder="Enter City/State/Zip">
+      <input type="text" class="form-control" name="citystatezip" placeholder="Enter City/State/Zip">
     </div>
      
     </div>
     <div class="form-group">
-  <label class="control-label col-sm-2" for="sel1">I need info about:</label>
+  <label class="control-label col-sm-2" for="productinfo">I need info about:</label>
   <div class="col-sm-2">
-  <select class="form-control" id="sel1">
+  <select class="form-control" name="productinfo">
     
     <option>ShopKeeper_FMB&trade;</option>
    
@@ -93,14 +92,14 @@
   <div class="form-group">
   	<div class="col-sm-offset-2 col-sm-8">
   <label for="comment">Questions or Comments:</label>
-  <textarea class="form-control" rows="7" id="comment"></textarea>
+  <textarea class="form-control" rows="7" name="comment"></textarea>
 <!-- </div>
-</div>
-  <div class="form-group">  -->
+</div> -->
+  <div class="form-group"> 
     <div class="col-sm-offset-2 col-sm-10">
   </div>
-  <!-- <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Send</button> -->
-  <input type="hidden" name="success" value="http://www.shopkeeper.com/thanks.php3">
+  <!-- <button type="submit" class="btn btn-info btn-lg" data-toggle="modal" name="Submit" value="Send" data-target="#myModal">Send</button> -->
+  <input type="hidden" name="success" value="http://www.shopkeeper.com/Thanks.html">
   <input type="submit" class="btn btn-info btn-lg" name="Submit" value="Send Message">
 
  </div>
